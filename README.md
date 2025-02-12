@@ -11,7 +11,7 @@ __Дата:__ 12.02.2024
 Проект представляет собо тестовый сайт для запуска сценария JavaScript, поэтому достаточно клонировать  
 репозиторий, запустить файл index.html и зайти в консоль (F12) для проверки результата. 
 
-```
+```bash
 git clone --single-branch -b Lab1 https://github.com/IA204JavaScript/labworks_leopard187.git
 ```
 
