@@ -24,7 +24,7 @@ git clone --single-branch -b Lab1 https://github.com/IA204JavaScript/labworks_le
         console.log("Hello, console!");
     </script>
 ```
-![Привет мир](https://github.com/LeoParD187/labworks_leopard187/blob/Lab1/images/3.png?raw=true)
+![Привет мир](https://github.com/LeoParD187/labworks_leopard187/Lab1/images/3.jpg)
 
 ---
 
@@ -32,7 +32,7 @@ git clone --single-branch -b Lab1 https://github.com/IA204JavaScript/labworks_le
 ```js
     let score = prompt("Введите ваш балл:");
 ```
-![Ввод значения](https://github.com/LeoParD187/labworks_leopard187/blob/Lab1/images/2.png?raw=true)
+![Ввод значения](https://github.com/LeoParD187/labworks_leopard187/Lab1/images/2.jpg)
 
 ---
 Результат работы сценариев в консоли Chrome:
@@ -55,4 +55,4 @@ git clone --single-branch -b Lab1 https://github.com/IA204JavaScript/labworks_le
         console.log(`Итерация: ${i}`);
     }
 ```
-![Результат работы сценариев в консоли](https://github.com/LeoParD187/labworks_leopard187/blob/Lab1/images/1.png?raw=true)
+![Результат работы сценариев в консоли](https://github.com/LeoParD187/labworks_leopard187/Lab1/images/1.jpg)
