@@ -4,7 +4,7 @@ __Студент:__  *Пармакли Леонид IA2404ru*
 __Проверил:__  *Алексей Муринец*  
 __Дата:__ 12.02.2024
 
-*[Основная ветка репозитория](https://github.com/IA204JavaScript/labworks_leopard187/tree/Lab1)*
+*[Основная ветка репозитория](https://github.com/IA204JavaScript/labworks_leopard187)*
 
 ---
 
