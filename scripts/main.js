@@ -1,3 +1,22 @@
+import {transactionsUSM} from "./transactions.js"
+
+import {GetUniqueTransactionTypes} from "./transactions_lib.js"
+import {CalculateTotalAmount} from "./transactions_lib.js"
+import {CalculateTotalAmountByDate} from "./transactions_lib.js"
+import {GetTransactionByType} from "./transactions_lib.js"
+import {GetTransactionsInDateRange} from "./transactions_lib.js"
+import {GetTransactionsByMerchant} from "./transactions_lib.js"
+import {CalculateAverageTransactionAmount} from "./transactions_lib.js"
+import {GetTransactionsByAmountRange} from "./transactions_lib.js"
+import {CalculateTotalDebitAmount} from "./transactions_lib.js"
+import {FindMostTransactionsMonth} from "./transactions_lib.js"
+import {FindMostDebitTransactionMonth} from "./transactions_lib.js"
+import {MostTransactionTypes} from "./transactions_lib.js"
+import {GetTransactionsBeforeDate} from "./transactions_lib.js"
+import {FindTransactionById} from "./transactions_lib.js"
+import {MapTransactionDescriptions} from "./transactions_lib.js"
+
+
 console.log("Function 1 ready");
 console.log(GetUniqueTransactionTypes(transactionsUSM));
 

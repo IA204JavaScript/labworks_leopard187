@@ -1,12 +1,16 @@
+import {Clamp} from "./help_lib.js"
+import {IsValueInRange} from "./help_lib.js"
+import {IsDateInRange} from "./help_lib.js"
+
 
 /**
  * Возвращает массив(множество) уникальных типов транзакций.
  * @param {array} transactions - исходный массив транзакций (см. transactiobs.js)
  * @returns {set} множество Set
  */
-function GetUniqueTransactionTypes(transactions)
+export function GetUniqueTransactionTypes(transactions)
 {
-    newTransactions = new Set();
+   let newTransactions = new Set();
 
     for(let i = 0; i < transactions.length; i++)
         newTransactions.add(transactions[i].transaction_type);
@@ -20,7 +24,7 @@ function GetUniqueTransactionTypes(transactions)
  * @param {*} transactions - исходный массив транзакций (см. transactiobs.js)
  * @returns {float} - сумма транзакций
  */
-function CalculateTotalAmount(transactions)
+export function CalculateTotalAmount(transactions)
 {
     let summ = 0.0
 
@@ -39,7 +43,7 @@ function CalculateTotalAmount(transactions)
  * @param {int} day   - день
  * @returns {float} - вычисленная сумма
  */
-function CalculateTotalAmountByDate(transactions, year = 0, month = 0, day = 0)
+export function CalculateTotalAmountByDate(transactions, year = 0, month = 0, day = 0)
 {
     let dateFilter = (year !== 0) ? String(year) : null;
 
@@ -101,7 +105,7 @@ function CalculateTotalAmountByDate(transactions, year = 0, month = 0, day = 0)
  * @param {string} type - тип (debit или credit соотв.).
  * @returns {*}
  */
-function GetTransactionByType(transactions, type)
+export function GetTransactionByType(transactions, type)
 {
     if(type !== "debit" && type !== "credit")
 	{
@@ -127,7 +131,7 @@ function GetTransactionByType(transactions, type)
  * @param {string} endDate - конечная дата, в формате строки: yyyy-mm-dd
  * @returns {*}
  */
-function GetTransactionsInDateRange(transactions, startDate, endDate)
+export function GetTransactionsInDateRange(transactions, startDate, endDate)
 {
 	let inRangeTransactions = [];
 
@@ -145,7 +149,7 @@ function GetTransactionsInDateRange(transactions, startDate, endDate)
  * @param {string} merchantName - имя торговца, совершавшего транзакцию
  * @returns {array}
  */
-function GetTransactionsByMerchant(transactions, merchantName)
+export function GetTransactionsByMerchant(transactions, merchantName)
 {
 	let arr = [];
 
@@ -162,7 +166,7 @@ function GetTransactionsByMerchant(transactions, merchantName)
  * @param {array} transactions - исходный массив транзакций (см. transactiobs.js)
  * @returns {float} среднее значение транзакций
  */
-function CalculateAverageTransactionAmount(transactions)
+export function CalculateAverageTransactionAmount(transactions)
 {
     return CalculateTotalAmount(transactions) / transactions.length;
 }
@@ -175,7 +179,7 @@ function CalculateAverageTransactionAmount(transactions)
  * @param {float} maxAmount - максимальная сумма транзакции
  * @returns {array}
  */
-function GetTransactionsByAmountRange(transactions, minAmount, maxAmount)
+export function GetTransactionsByAmountRange(transactions, minAmount, maxAmount)
 {
 	let arr = [];
 
@@ -192,7 +196,7 @@ function GetTransactionsByAmountRange(transactions, minAmount, maxAmount)
  * @param {array} transactions - исходный массив транзакций (см. transactiobs.js)
  * @returns {float}
  */
-function CalculateTotalDebitAmount(transactions)
+export function CalculateTotalDebitAmount(transactions)
 {
 	let summTransactionsDebit = 0.0;
 
@@ -209,7 +213,7 @@ function CalculateTotalDebitAmount(transactions)
  * @param {array} transactions - исходный массив транзакций (см. transactiobs.js)
  * @returns {*}
  */
-function FindMostTransactionsMonth(transactions)
+export function FindMostTransactionsMonth(transactions)
 {
 	let monthNames = [	"Jan", "Feb", "Mar", "Apr", 
 						"May", "Jun", "Jul", "Aug",
@@ -251,7 +255,7 @@ function FindMostTransactionsMonth(transactions)
  * @param {array} transactions - исходный массив транзакций (см. transactiobs.js)
  * @returns {*}
  */
-function FindMostDebitTransactionMonth(transactions)
+export function FindMostDebitTransactionMonth(transactions)
 {
 	let monthNames = [	"Jan", "Feb", "Mar", "Apr", 
 						"May", "Jun", "Jul", "Aug",
@@ -295,7 +299,7 @@ function FindMostDebitTransactionMonth(transactions)
  * @param {array} transactions - исходный массив транзакций (см. transactiobs.js)
  * @returns {string} ["debit" - если дебетовых | "credit" - если кредитовых | "equal" - если количество равно]
  */
-function MostTransactionTypes(transactions)
+export function MostTransactionTypes(transactions)
 {
 	let debits = 0;
 	let credits = 0;
@@ -319,7 +323,7 @@ function MostTransactionTypes(transactions)
  * @param {string} date - дата, в формате строки: yyyy-mm-dd
  * @returns {*}
  */
-function GetTransactionsBeforeDate(transactions, date)
+export function GetTransactionsBeforeDate(transactions, date)
 {
 	let dateObj = new Date(date);
 	let transactionsBefore = [];
@@ -338,7 +342,7 @@ function GetTransactionsBeforeDate(transactions, date)
  * @param {string} id - уникальный идентификатор
  * @returns {object} транзакция, в противном случае null
  */
-function FindTransactionById(transactions, id)
+export function FindTransactionById(transactions, id)
 {
 	for(let i = 0; i < transactions.length; i++)
 	{
@@ -354,7 +358,7 @@ function FindTransactionById(transactions, id)
  * @param {array} transactions 
  * @returns {array} массив описаний транзакций, в противном случае пустой массив
  */
-function MapTransactionDescriptions(transactions)
+export function MapTransactionDescriptions(transactions)
 {
 	let descs = [];
 

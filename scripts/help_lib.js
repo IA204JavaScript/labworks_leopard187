@@ -5,7 +5,7 @@
  * @param {*} max - максимальное значение
  * @returns val, если не выходит за диапазон, 
  */
-function Clamp(val, min, max)
+export function Clamp(val, min, max)
 {
     return (val < min) ? min : (val > max) ? max : val;
 }
@@ -18,7 +18,7 @@ function Clamp(val, min, max)
  * @param {*} max - максимальное значение
  * @returns true, если значение val в диапазоне [min..max]
  */
-function IsValueInRange(val, min, max)
+export function IsValueInRange(val, min, max)
 {
 	return (val >= min && val <= max);
 }
@@ -31,7 +31,7 @@ function IsValueInRange(val, min, max)
  * @param {*} max - максимальная дата
  * @returns true, если дата в диапазоне [min..max]
  */
-function IsDateInRange(date, min, max)
+export function IsDateInRange(date, min, max)
 {
 	let dateValue = new Date(date);
     let minValue = new Date(min);

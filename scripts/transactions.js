@@ -9,7 +9,7 @@
  * merchant_name - название магазина или сервиса.
  * card_type - тип карты (кредитная или дебетовая).
  */
-const transactionsUSM = 
+export let transactionsUSM = 
 [
     {
       transaction_id: "1",
