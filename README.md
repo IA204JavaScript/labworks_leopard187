@@ -9,4 +9,9 @@ __Проверяющий:__  *Алексей Муринец*
 ```bash
 git clone --single-branch -b Lab1 https://github.com/IA204JavaScript/labworks_leopard187.git
 ```
+
+[Лабораторная работа №2: Работа с массивами в JavaScript](https://github.com/IA204JavaScript/labworks_leopard187/tree/Lab2)
+```bash
+git clone --single-branch -b Lab2 https://github.com/IA204JavaScript/labworks_leopard187.git
+```
 __Дата завершения:__ 12.02.2024
