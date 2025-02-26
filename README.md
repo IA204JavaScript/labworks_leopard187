@@ -81,8 +81,8 @@ import {GetUniqueTransactionTypes} from "./transactions_lib.js"
 
 ## 4. Скриншоты работы 
 
-Выполнение скрипта в Google Chrome, до рефактора в скрипт Node.Js:
+Выполнение скрипта в Google Chrome, до рефактора в скрипт Node.Js:  
 <img src="./images/1.jpg" alt="Выполнение в Chrome">
 
-Выполнение скрипта в Node.Js:
+Выполнение скрипта в Node.Js:  
 <img src="./images/2.jpg" alt="Выполнение в Node.Js">
