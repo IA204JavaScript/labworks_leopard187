@@ -9,7 +9,7 @@ __Проверяющий:__  *Алексей Муринец*
 ```bash
 git clone --single-branch -b Lab1 https://github.com/IA204JavaScript/labworks_leopard187.git
 ```
-__Дата завершения:__ 12.02.2024
+__Дата завершения:__ 12.02.2025
 
 ---
 
@@ -17,4 +17,20 @@ __Дата завершения:__ 12.02.2024
 ```bash
 git clone --single-branch -b Lab2 https://github.com/IA204JavaScript/labworks_leopard187.git
 ```
-__Дата завершения:__ 26.02.2024
+__Дата завершения:__ 26.02.2025
+
+---
+
+[Лабораторная работа №3: Продвинутые объекты в JavaScript](https://github.com/IA204JavaScript/labworks_leopard187/tree/Lab3)
+```bash
+git clone --single-branch -b Lab3 https://github.com/IA204JavaScript/labworks_leopard187.git
+```
+__Дата завершения:__ dd.mm.2025
+
+---
+
+[Лабораторная работа №4: Работа с DOM-деревом и событиями в JavaScript](https://github.com/IA204JavaScript/labworks_leopard187/tree/Lab4)
+```bash
+git clone --single-branch -b Lab4 https://github.com/IA204JavaScript/labworks_leopard187.git
+```
+__Дата завершения:__ dd.mm.2025
