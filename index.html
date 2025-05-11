@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Lab4</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="styles/style.css">
+    </head>
+
+    <body>
+        <h1>Транзакции</h1>
+
+		<!-- заполняемая форма -->
+        <form id="inputForm">
+            <select id="categorySelect" required="">
+				<option value="Credit">Кредитовая</option>
+				<option value="Debit">Дебитовая</option>
+			</select>
+			<input type="number" id="summInput" placeholder="Сумма" required="">
+			<input type="text" id="descInput" placeholder="Описание" required="">
+			<button type="submitButton">Добавить</button>
+        </form>
+
+		<!-- таблица транзаций... -->
+		<table id="transactionTable">
+			<caption id="tableCaption">Добавленные транзации</caption>
+			<thead>
+				<tr>
+					<th>Дата и время</th>
+					<th>Категория</th>
+					<th>Описание</th>
+					<th>Действие</th>
+				</tr>
+			</thead>
+			<tbody id="tableBody">
+				
+			</tbody>
+		</table>
+
+		<h3>Итоговая сумма: <span id="totalSumm">0</span></h3>
+
+		<div id="fullDesc"></div>
+
+		<script src="scripts/index.js" type="module"></script>
+
+    </body>
+</html>

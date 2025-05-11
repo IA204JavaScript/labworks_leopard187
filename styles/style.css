@@ -1,0 +1,69 @@
+body {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f0f0ff;
+}
+
+
+form {
+    margin-bottom: 20px;
+    background-color: #e6e6fa;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+
+input, select, button {
+    margin-right: 10px;
+    padding: 5px;
+}
+
+
+button {
+    cursor: pointer;
+}
+
+
+#transactionTabe caption, h1, h2, h3, body, form, input, select, button  {
+	font-family: "Consolas";
+}
+
+
+.deleteButton {
+    background-color: #800;
+    color: #e6e6fa;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+#transactionTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #e6e6fa;
+}
+
+
+#transactionTable th, #transactionTable td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+
+.positive {
+    background-color: #7fff7f;
+}
+
+
+.negative {
+    background-color: #ff7f7f;
+}
+
+
+#fullDescription {
+    margin-top: 15px;
+    font-style: italic;
+}
