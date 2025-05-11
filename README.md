@@ -33,4 +33,4 @@ __Дата завершения:__ 13.04.2025
 ```bash
 git clone --single-branch -b Lab4 https://github.com/IA204JavaScript/labworks_leopard187.git
 ```
-__Дата завершения:__ dd.mm.2025
+__Дата завершения:__ 07.05.2025
