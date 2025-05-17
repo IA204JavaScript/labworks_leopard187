@@ -37,7 +37,7 @@ __Дата завершения:__ 07.05.2025
 
 ---
 
-[Лабораторная работа №4: Работа с DOM-деревом и событиями в JavaScript](https://github.com/IA204JavaScript/labworks_leopard187/tree/IndWork)
+[Индивидуальная работа: Работа с графической библиотекой Three.js на базе WebGL](https://github.com/IA204JavaScript/labworks_leopard187/tree/IndWork)
 ```bash
 git clone --single-branch -b IndWork https://github.com/IA204JavaScript/labworks_leopard187.git
 ```
