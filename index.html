@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Использование WebGL</title>
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+	</head>
+
+	<body>
+
+		<div class="container">
+			<div class="renderTargetBlock" >
+				<!-- Пустой div -->
+                <div class="renderTarget" id="renderTargetOutput">
+
+				</div>
+			</div>
+
+			<div class="controlPanel">
+
+				<div class="section">
+					<h2>Добавить объект</h2>
+					<div class="objectRow">
+						<input type="text" id="objIdInput" placeholder="Название" required=""/>
+            			<select id="objectSelect" required="">
+							<option value="cube">Куб</option>
+							<option value="cylinder">Цилиндр</option>
+							<option value="sphere">Сфера</option>
+						</select>
+						<button type="submitButton" id="addButton" >Добавить</button>
+					</div>
+					
+					<h2>Объекты в сцене</h2>
+					<div class="tableArea">
+						<table id="objectTable">
+							<thead>
+								<tr>
+									<th>Название</th>
+									<th>Тип</th>
+									<th>Действие</th>
+								</tr>
+							</thead>
+							<tbody id="tableBody">
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+				
+				<div class="section">
+					<h2>Освещение</h2>
+
+					<!-- Окружающий цвет -->
+					<label>Окружающий цвет</label>
+					<div class="colorRow">
+						<input id="ambientRGB" type="color" value="#404040">
+						<button id="ambnResetBtn">Сброс</button>
+					</div>
+
+					<!-- Диффузный цвет -->
+					<label>Диффузный цвет</label>
+					<div class="colorRow">
+						<input id="diffuseRGB" type="color" value="#ffffff">
+						<button id="diffResetBtn">Сброс</button>
+					</div>
+
+					<!-- Направление освещения -->
+					<label>Направление освещения</label>
+					X: <input id="lightDirX" type="range" min="-1" max="1" step="0.025" class="slider" value="0.2"> <br />
+					Y: <input id="lightDirY" type="range" min="-1" max="1" step="0.025" class="slider" value="0.8"> <br />
+					Z: <input id="lightDirZ" type="range" min="-1" max="1" step="0.025" class="slider" value="0.4">
+					<button id="dirResetBtn" class="fullWidthButton">Сброс направления</button>
+				</div>
+			</div>
+		</div>
+
+		<script type="module" src="./scripts/__main.js"></script>
+
+	</body>
+
+</html>
