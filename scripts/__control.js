@@ -13,8 +13,8 @@ const mouseState = {
 
 
 export function initControls() {
+    
     const renderTarget = document.getElementById("renderTargetOutput");
-
 
     renderTarget.addEventListener("wheel", function(event) {
         let dist = getCamera().getDistance();
@@ -32,7 +32,7 @@ export function initControls() {
     });
 
 
-    renderTarget.addEventListener("mouseup", function(event) {
+    renderTarget.addEventListener("mousedown", function(event) {
         mouseState.pressed = true;
     });
 
