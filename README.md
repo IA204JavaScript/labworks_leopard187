@@ -41,4 +41,4 @@ __Дата завершения:__ 07.05.2025
 ```bash
 git clone --single-branch -b IndWork https://github.com/IA204JavaScript/labworks_leopard187.git
 ```
-__Дата завершения:__ 28.05.2025
+__Дата завершения:__ 22.05.2025
